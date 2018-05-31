@@ -1,0 +1,651 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: Minecraftia;
+	src: url(Minecraftia-Regular.ttf);
+}
+
+body {
+	background-color: #202020;
+	background-image: url("images/fond.png");
+	margin: 0;
+	padding: 0;
+	font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
+	word-wrap: break-word;
+}
+
+#corps {
+	width: 100%;
+	mix-width: 800px;
+	max-width: 1000px;
+	background-color: white;
+	margin: 0 auto 0 auto;
+	mix-width: 800px;
+}
+
+header {
+	text-align: center;
+	padding: 15px;
+	background-color: #ffc005;
+}
+
+header img {
+	width: 100%;
+}
+
+nav {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	background-color: #E0E0E0;
+	padding: 5px 10px 5px 10px;
+}
+
+nav a {
+	margin: 15px;
+	text-decoration: none;
+	color: black;
+	white-space: nowrap;
+}
+
+nav a:hover, .navDocumentation a:hover {
+	color: #808080;
+}
+
+.navDocumentation {
+	font-size: 1.2em;
+	background-color: #FFF8DF;
+	padding: 5px 10px 5px 10px;
+}
+
+.navDocumentation a {
+	color: black;
+}
+
+section a, .fauxLien {
+	color: #0645ad;
+}
+
+section a:hover, .fauxLien:hover {
+	color: #0055E2;
+}
+
+section a:visited {
+	color: #0b0080;
+}
+
+.fauxLien {
+	text-decoration: underline;
+	cursor: pointer;
+	display: inline-block;
+}
+
+footer {
+	background-color: #3a3a3a;
+	color: #E0E0E0;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+footer td {
+	padding: 30px;
+}
+
+footer a, footer .lien {
+	color: #FFF8DF;
+}
+
+footer img.logo {
+	max-width: 300px;
+	min-width: 170px;
+	width: 100%;
+}
+
+.msg {
+	padding: 20px;
+	margin: 0;
+	font-weight: bold;
+}
+
+.msgOK {
+	background-color: #c4ffc4;
+}
+
+.erreurs {
+	background-color: #FF6868;
+}
+
+.msgAnnonce {
+	background-color: #d3e9ff;
+}
+
+.texteOK {
+	color: green;
+	font-style: italic;
+}
+
+.texteErreur {
+	color: red;
+	font-style: italic;
+}
+
+section {
+	font-size: 1.1em;
+}
+
+section.texte {
+	padding: 20px 00px 5px 00px;
+}
+
+section.texte p, section.texte h1, section.texte h2, section.texte h3,
+	section.texte h4 {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+section.texte h2, section.texte h3, section.texte h4 {
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+div.sourire {
+	font-size: 1.2em;
+	background-color: #FFF8DF;
+	background-image: url("images/sourire.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-position-x: 40px;
+	padding: 20px 20px 20px 240px;
+	height: 160px;
+	line-height: 120px;
+}
+
+div.sourire p {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+.margeGauche {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+section .avertissement {
+	background-color: #FFBEA0;
+	padding: 20px;
+}
+
+section.formulaire h1, section.listeMaps h1, section.descriptionMap h1 {
+	padding: 20px 20px 0 20px;
+}
+
+section.formulaire table {
+	width: 100%;
+	background-color: #FFF8DF;
+}
+
+section.formulaire table td {
+	width: 50%;
+	padding: 20px;
+	text-align: center;
+}
+
+section.formulaire img.social-login-img {
+	width: 100%;
+	max-width: 350px;
+	min-width: 200px;
+}
+
+section.formulaire p {
+	padding: 0 20px 0 20px;
+}
+
+section.listeMaps table, section.descriptionMap table, table.tableauFond
+	{
+	table-layout: fixed;
+}
+
+table.align-form .gauche, table.align-form .droite {
+	padding: 3px;
+}
+
+table.align-form .gauche {
+	text-align: right;
+	vertical-align: middle;
+}
+
+table.align-form .droite {
+	text-align: left;
+}
+
+input[type=submit], button {
+	background-color: #ffc005;
+	border: 3px solid #E0E0E0;
+	margin-top: 5px;
+	padding: 4px;
+	border-radius: 8px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+form .optional {
+	font-size: 0.8em;
+	color: grey;
+}
+
+input[type=submit]:hover, button:hover {
+	background-color: #E0E0E0;
+	border: 3px solid #ffc005;
+	color: black;
+	cursor: pointer;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=url],
+	textarea, select {
+	border: 3px solid #E0E0E0;
+	padding: 4px;
+	border-radius: 8px;
+	font-size: 1.1em;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus,
+	input[type=url]:focus, textarea:focus, select:focus {
+	border: 3px solid gray;
+}
+
+input:disabled, textarea:disabled {
+	border-style: dashed !important;
+}
+
+textarea:focus, input:focus, select:focus {
+	outline: none;
+}
+
+textarea {
+	max-width: 100%;
+	resize: vertical;
+}
+
+form .cases {
+	padding: 15px;
+	text-align: left;
+	max-width: 800px;
+	margin: auto;
+}
+
+div.g-recaptcha {
+	margin: 0 auto;
+	width: 304px;
+}
+
+ul {
+	margin: 5px;
+	margin-top: 0px;
+}
+
+table.listeTrucsUtilisateur {
+	width: 100%;
+	text-align: center;
+	background-color: #FFF8DF;
+	margin: 0px;
+	padding: 10px 20px 20px 10px;
+}
+
+table.listeTrucsUtilisateur td {
+	width: 50%;
+	vertical-align: top;
+}
+
+section.listeMaps table, section.descriptionMap table, table.tableau,
+	table.tableauFond {
+	width: 100%;
+	background-color: #FFF8DF;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.varianteFond {
+	background-color: #FFF0B9;
+}
+
+/*table.tableauFond thead {
+	font-size: 1.2em;
+	font-weight: bold;
+}*/
+section.listeMaps tr {
+	height: 140px;
+	border: 5px solid #ffc005;
+	border-left: none;
+	border-right: none;
+}
+
+section.listeMaps tr.ligneSupplementaire {
+	height: 34px;
+	text-align: center;
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+section.listeMaps td.image {
+	width: 250px;
+	background-color: #FFF0B9;
+}
+
+section.listeMaps td.image a {
+	display: block;
+	height: 140px;
+}
+
+section.listeMaps td.image img {
+	width: 250px;
+	height: 140px;
+}
+
+table td.image {
+	padding: 0px;
+}
+
+table td.image img {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+section.listeMaps .description {
+	vertical-align: top;
+	padding: 10px;
+}
+
+section.listeMaps .description strong {
+	font-size: 1.2em;
+}
+
+section.listeMaps .description strong a {
+	color: black;
+	text-decoration: none;
+}
+
+section.listeMaps .details {
+	width: 60px;
+	padding: 10px;
+}
+
+section.listeMaps .navigation, .optionsTableau {
+	text-align: right;
+	margin: 10px 20px 10px 20px;
+	font-size: 0.9em;
+}
+
+.optionsTableau img.flecheAngle {
+	height: 20px;
+	margin-right: -5px;
+	margin-top: -3px;
+}
+
+section.listeMaps .indication-jouer {
+	font-size: 0.9em;
+}
+
+section.descriptionMap td, section.descriptionMap th, table.tableauFond td,
+	table.tableauFond th {
+	padding: 10px 20px 10px 20px;
+	vertical-align: top;
+}
+
+section.descriptionMap a.lienImg {
+	display: block;
+	height: 562px;
+}
+
+section.descriptionMap img.imgMap {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+table.tableau tr td:first-child, table.tableau tr th:first-child {
+	border-left: none;
+}
+
+table.tableau tr td:last-child, table.tableau tr th:last-child {
+	border-right: none;
+}
+
+table.tableau {
+	border: 5px solid #ffc005;
+	border-left: none;
+	border-right: none;
+	text-align: center;
+}
+
+table.tableau td, table.tableau th {
+	border: 1px solid #ffc005;
+	padding: 6px;
+}
+
+table.tableau .fondGris {
+	background-color: #f3f3f3;
+}
+
+table.tableauCompresse td, table.tableauCompresse th {
+	padding: 0px;
+}
+
+table.tableauCompresse tr:nth-child(even) {
+	background-color: #FFF0B9;
+}
+
+table.tableau th {
+	background-color: #FFF0B9;
+	border-bottom: 5px solid #ffc005;
+}
+
+.very-easy {
+	color: #A5A5A5;
+}
+
+.easy {
+	color: #00BF00;
+}
+
+.medium {
+	color: #FFB300;
+}
+
+.hard {
+	color: #ff5555;
+}
+
+.extreme {
+	color: #aa0000;
+}
+
+.barre {
+	background-color: #FFF8DF;
+	border: 5px solid #ffc005;
+	border-left: none;
+	border-right: none;
+	padding: 10px;
+	text-align: center;
+	font-size: 1.3em;
+	font-style: italic;
+}
+
+.commande, .cmd {
+	color: black;
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	padding: 1px 4px;
+	font-family: monospace, Courier;
+	white-space: nowrap;
+}
+
+.imageFlottante {
+	display: block;
+	float: right;
+	margin-left: 8px;
+	margin-bottom: 8px;
+}
+
+.imageFlottante img {
+	width: 100%;
+}
+
+.panneau {
+	background-image: url("images/doc/fond-panneau.png");
+	font-family: Minecraftia;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.jauneMC {
+	color: DarkKhaki;
+}
+
+.goldMC {
+	color: DarkOrange;
+}
+
+.classement {
+	margin: 0;
+}
+
+.classement .record {
+	background-color: #FFF0B9;
+	text-align: center;
+	padding: 15px;
+	background-image: url("images/lauriers.png");
+	background-repeat: no-repeat;
+	background-size: 70px;
+	background-position: center;
+	font-size: 1.1em;
+}
+
+.classement .record strong {
+	font-size: 1.1em;
+}
+
+.classement p {
+	background-color: #FFF8DF;
+	margin: 0;
+	padding: 20px;
+}
+
+.colonnes {
+	-webkit-column-count: 4; /* Chrome, Safari, Opera */
+	-moz-column-count: 4; /* Firefox */
+	column-count: 4;
+	text-align: left;
+}
+
+.partage {
+	padding: 10px 20px 10px 20px;
+	background-color: #d3e9ff;
+	text-align: center;
+	height: 28px;
+}
+
+.twitter-share-button[style] {
+	vertical-align: text-bottom !important;
+}
+
+.partage p {
+	display: inline-block;
+	margin: 0 0 0 8px;
+	height: 28px;
+	vertical-align: middle;
+}
+
+.ligneInfosListe {
+	display: inline-block;
+	margin-left: 24px;
+	font-size: 0.8em
+}
+
+img.miniTete {
+	width: 17px !important;
+	height: 17px !important;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+section hr {
+	border: 1px solid #e0e0e0;
+	margin-bottom: 0;
+}
+
+p code {
+	display: block;
+	border: 1px solid #e0e0e0;
+	padding: 4px;
+	margin: 4px 0 4px 0;
+	background-color: #fdfdfd;
+}
+
+.texteInfo {
+	cursor: help;
+	border-bottom: 1px dotted;
+}
+
+/* Tooltip container */
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	text-decoration: none;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 200px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	padding: 5px;
+	border-radius: 6px;
+	/* Position the tooltip text */
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -100px;
+	margin-bottom: -10px;
+	/* Fade in tooltip */
+	opacity: 0;
+	transition: opacity 0.5s, margin-bottom 0.4s;
+	font-weight: normal;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+	margin-bottom: 0;
+}
+
+img.etoile {
+	width: 17px;
+	height: 17px;
+}

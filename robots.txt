@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /user/
+Disallow: /images/doc/opti/
+Disallow: /images/maps/mini/
+Disallow: /hybridauth/
+Disallow: /highslide/
+Disallow: /api/
+Disallow: /doc/languages/
